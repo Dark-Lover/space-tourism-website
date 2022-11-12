@@ -1,0 +1,256 @@
+header {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.dest_bg {
+  background: url("/src/assets/destination/background-destination-tablet.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hero Section styling*/
+
+.dest_hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.dest_hero .m_heading {
+  color: #d2d8f9;
+  text-transform: uppercase;
+  font-family: var(--font_primary);
+  letter-spacing: 0.12rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+.dest_hero .m_heading > span {
+  color: var(--gray);
+}
+
+.dest_hero .content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* styling sat section */
+.dest_hero .content .sat {
+  margin-top: 0.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dest_hero .content .sat .img_box {
+  width: 150px;
+  height: 150px;
+  margin: 0 1rem 0.6rem 1rem;
+}
+
+.dest_hero .content .sat .img_box img {
+  width: 100%;
+}
+
+/* sat info */
+.dest_hero .content .sat .sat_info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dest_hero .content .sat .sat_info .sat_nav {
+  margin: 0 0 0.6rem 0;
+}
+
+.sat_items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sat_item {
+  padding: 0.2rem 0.3rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  font-family: var(--font_third);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sat_item:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.sat_name {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  font-weight: 500;
+  font-family: var(--font_third);
+  color: #ffffff;
+}
+
+.sat_desc {
+  font-family: var(--font_primary);
+  font-size: 0.8rem;
+  text-align: center;
+  color: #d2d8f9;
+  letter-spacing: 0.03rem;
+  margin-bottom: 0.8rem;
+  min-height: 80px;
+}
+
+.sat_info hr {
+  color: var(--gray);
+  width: 85%;
+  margin: auto;
+}
+
+/* Styling travel info distance and time */
+.travel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.travel .distance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.travel_title {
+  text-transform: uppercase;
+  font-family: var(--font_third);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  color: #ffffff;
+  padding-bottom: 0.4rem;
+}
+
+.travel_info {
+  text-transform: uppercase;
+  font-family: var(--font_third);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  color: #ffffff;
+  padding-bottom: 0.5rem;
+}
+/*! End of Costum Styling */
+
+@media screen and (min-width: 600px) {
+  .dest_bg {
+    background: url("/src/assets/destination/background-destination-desktop.jpg")
+      no-repeat;
+  }
+
+  .dest_hero {
+    padding-top: 8rem;
+    min-width: 600px;
+  }
+  .dest_hero .m_heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .dest_hero .content {
+    max-width: 600px;
+  }
+  .dest_hero .content .sat {
+    flex-direction: row;
+  }
+  .dest_hero .content .sat .img_box {
+    flex: 1;
+  }
+  .dest_hero .content .sat .sat_info {
+    flex: 1;
+  }
+  .dest_hero .content .sat .img_box {
+    width: 250px;
+    height: 250px;
+    margin: 0 2rem 0.6rem 1rem;
+  }
+  .dest_hero .m_heading,
+  .sat_name,
+  .sat_desc,
+  .distance,
+  .travel_title,
+  .travel_info {
+    text-align: left;
+  }
+  .sat_items {
+    justify-content: space-between;
+    max-width: 70%;
+  }
+  .sat_desc {
+    margin-bottom: 2rem;
+  }
+  .sat_info hr {
+    width: 100%;
+  }
+  .travel {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sat_item {
+    font-size: 0.9rem;
+  }
+  .sat_name {
+    font-size: 2.8rem;
+  }
+  .sat_desc {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .dest_hero .content {
+    min-width: 900px;
+  }
+  .dest_hero .content .sat .img_box {
+    margin: 0 5rem 0.6rem 1rem;
+    width: 390px;
+    height: 390px;
+  }
+  .sat_items {
+    width: 60%;
+  }
+  .dest_hero .content .sat .sat_info {
+    max-width: 350px;
+  }
+  .dest_hero {
+    min-width: 900px;
+  }
+  .sat_item {
+    font-size: 1rem;
+  }
+  .sat_name {
+    font-size: 3rem;
+  }
+  .sat_desc {
+    font-size: 1rem;
+  }
+}

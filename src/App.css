@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@300;400;500;600;700&family=Bellefair&display=swap");
+
+:root {
+  --white: #ffffff;
+  --grey: #d2d8f9;
+  --black: #0c0e18;
+  --font_primary: "Barlow Condensed", sans-serif;
+  --gray: rgb(143, 135, 135);
+  --font_sec: "Bellefair", serif;
+  --font_third: "Barlow", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+body {
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+
+.role {
+  text-transform: uppercase;
+  color: var(--gray);
+  font-family: var(--font_third);
+  margin-bottom: 0.5rem;
+}
+
+.heading {
+  text-transform: uppercase;
+  color: var(--white);
+  font-family: var(--font_third);
+  font-size: 1.1rem;
+  letter-spacing: 0.03rem;
+}
+
+.lead {
+  font-family: var(--font_third);
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--grey);
+  letter-spacing: 0.05rem;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+.small {
+  text-transform: uppercase;
+  font-family: var(--font_third);
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--grey);
+  letter-spacing: 0.05rem;
+  margin: 1rem 0;
+  font-weight: 400;
+}
