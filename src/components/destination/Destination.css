@@ -18,7 +18,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 6rem;
+  padding-top: 3rem;
   max-width: 600px;
   margin: auto;
 }
@@ -166,10 +166,11 @@ header {
   .dest_bg {
     background: url("/src/assets/destination/background-destination-desktop.jpg")
       no-repeat;
+    background-size: cover;
   }
 
   .dest_hero {
-    padding-top: 8rem;
+    padding-top: 4rem;
     min-width: 600px;
   }
   .dest_hero .m_heading {

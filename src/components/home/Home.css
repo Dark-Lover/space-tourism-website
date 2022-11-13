@@ -16,7 +16,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 4rem;
   max-width: 600px;
   margin: auto;
 }
@@ -99,11 +99,14 @@ header {
 @media screen and (min-width: 600px) {
   .home_bg {
     background: url("/src/assets/home/background-home-desktop.jpg") no-repeat;
+    background-position-x: center;
+    background-size: cover;
   }
   .hero {
     flex-direction: row;
     max-width: 900px;
     margin: auto;
+    padding: 5rem;
   }
   .hero .content {
     align-items: unset;

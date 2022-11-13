@@ -14,7 +14,7 @@ header {
 
 .technology_hero {
   height: 100%;
-  padding-top: 6rem;
+  padding-top: 3rem;
   max-width: 600px;
   margin: auto;
 }
@@ -90,6 +90,7 @@ header {
   .tech_bg {
     background: url("/src/assets/technology/background-technology-desktop.jpg")
       no-repeat;
+    background-size: cover;
   }
   .technology_hero .m_heading {
     text-align: left;

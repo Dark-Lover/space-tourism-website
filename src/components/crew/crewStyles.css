@@ -13,7 +13,7 @@ header {
 
 .crew_hero {
   height: 100%;
-  padding-top: 6rem;
+  padding-top: 3rem;
   max-width: 600px;
   margin: auto;
 }
@@ -76,6 +76,7 @@ header {
 @media screen and (min-width: 600px) {
   .crew_bg {
     background: url("/src/assets/crew/background-crew-desktop.jpg") no-repeat;
+    background-size: cover;
   }
   .crew_hero .m_heading {
     text-align: left;
